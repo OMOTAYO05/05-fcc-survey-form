@@ -1,27 +1,44 @@
-# Project Name
+# SURVEY FORM
 
-> One paragraph statement about the project.
+> A Survey form built with HTML5 AND CSS.
 
-![screenshot](./app_screenshot.png)
+![05-fcc-survey-form](image.png)
 
-Additional description of the project and its features.
+> The main objective of this project is to design and implement a survey form that collects user input through various form fields, Its features multples elements and id,class and link.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML5:Used to structure the form and its components.
+  - `form`: Allow user to enter input on an html webpage,
+  - `option`:is used to define the choices available within a `select`,
+  - `main`: plays a crucial role in structuring web content in the htmml page.
+  - `textarea`: used in forms to collect user inputs like comments or reviews.
+  - `div`: is used as container for html tags:
+- CSS
+  - `background-color`: is a property in CSS is used to set the background color of an element.
+  - `display`: is afundamental tool in css for controlling the layout of elements on a webpage.
+  - `font-family`: is used to define the typeface that should be applied to text within an element.
+  - `width`,`margin`,`height`
+  - `inline`, `padding`, `text-align`,
+- Linters
+  - [Prettier](https://prettier.io/),
+  - [Stylelint](https://stylelint.io/),
+- Github Action
 
 ## Live Demo
 
 [Live Demo Link](https://livedemo.com)
+
+## Deployment Link
+
+[Deployment link](https://vercel.com/onikosi-omotayo-eniolas-projects/05-fcc-survey-form)
 
 ### Development (Running locally)
 
 - Clone the project
 
 ```bash
-git clone https://github.com/bolah2009/html-css-template.git
+git clone https://github.com/OMOTAYO05/html-css-template.git
 
 ```
 
