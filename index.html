@@ -3,10 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="index.css" rel="stylesheet" />
+    <title>Survey Form</title>
+    <link href="css/index.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello!</h1>
+    <div class="container">
+      <header class="header">
+        <h1 class="text-center" id="title">TECH EVENT SURVEY FORM</h1>
+        <p class="description text-center" id="description">
+          Take a moment to complete the brief survey, your comment will greatly help us improve
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            class="form-control"
+            id="name"
+            name="name"
+            type="text"
+            aria-label="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            class="form-control"
+            id="email"
+            name="email"
+            type="email"
+            aria-label="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number">Number<span class="clue">(optional)</span></label>
+          <input
+            class="form-control"
+            id="number"
+            name="number"
+            type="number"
+            aria-label="number"
+            min="10"
+            max="99"
+            placeholder="Number"
+          />
+        </div>
+        <div class="form-group">
+          <p>Gender</p>
+          <select
+            class="form-control"
+            id="dropdown"
+            name="role"
+            type=""
+            aria-label="dropdown"
+            min=""
+            max=""
+            required
+          >
+            <option value="gender" disabled="" selected="">Select Gender</option>
+            <option value="male" disabled="" selected="">Male</option>
+            <option value="female">Female</option>
+            <option value="binary">Non-binary</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>HOW DID YOU HEAR ABOUT THIS TECH EVENT?</p>
+          <label for="radio"></label>
+          <input
+            class="input-radio"
+            id="radio"
+            name="user-recommend"
+            type="radio"
+            value="event"
+            aria-label="radio"
+            checked
+          />Flyer
+          <label for="input-radio">
+            <input
+              class="input-radio"
+              id="input-radio"
+              name="user-recommend"
+              type="radio"
+              value="flyer"
+            />Invitation</label
+          >
+
+          <label for="input-radio"
+            ><input class="input-radio" name="user-recommend" type="radio" value="internet" />
+            Internet</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>WHY DID YOU DECIDE TO ATTEND?</p>
+          <select class="form-control" id="decide" name="attend" aria-label="most-like" required>
+            <option value="student" disabled="" selected="">Select an option</option>
+            <option value="challenges" disabled="" selected="">Opportunity</option>
+            <option value="projects" disabled="" selected="">Location of Interest</option>
+            <option value="community" disabled="" selected="">Support the Club</option>
+            <option value="openSource" disabled="" selected="">Program of interest</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What did you enjoyed most?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              class="input-checkbox"
+              name="format"
+              type="checkbox"
+              value="program-format"
+            />Program Format</label
+          >
+          <label>
+            <input
+              class="input-checkbox"
+              name="format"
+              type="checkbox"
+              value="featured-guest"
+            />Featured Guest</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              name="format"
+              type="checkbox"
+              value="topic"
+            />Topic</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              name="format"
+              type="checkbox"
+              value="challenges"
+            />Challenges</label
+          >
+          <label
+            ><input class="input-checkbox" name="format" type="checkbox" value="tech-club" />Tech
+            Club</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              name="format"
+              type="checkbox"
+              value="location"
+            />Location</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              name="format"
+              type="checkbox"
+              value="videos"
+            />Videos</label
+          >
+          <label
+            ><input class="input-checkbox" name="format" type="checkbox" value="time" /> Git
+            Time</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              name="format"
+              type="checkbox"
+              value="suggestion"
+            />Suggestion</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments?</p>
+          <textarea
+            class="input-textarea"
+            id="comments"
+            name="comment"
+            aria-label="comment"
+            placeholder="Put your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button class="submit-button" id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
